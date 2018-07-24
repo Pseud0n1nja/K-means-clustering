@@ -7,7 +7,7 @@ from scipy.cluster.hierarchy import linkage
 from scipy.cluster.hierarchy import dendrogram
 from scipy.cluster.hierarchy import cut_tree
 
-retail = pd.read_csv("/Users/Arpit/Documents/UpGrad/Unsupervised_learning_Clustering/Online Retail.csv",  sep = ',',encoding = "ISO-8859-1", header= 0)
+retail = pd.read_csv("Online Retail.csv",  sep = ',',encoding = "ISO-8859-1", header= 0)
 
 # parse date
 retail['InvoiceDate'] = pd.to_datetime(retail['InvoiceDate'], format = "%d/%m/%y %H:%M")
